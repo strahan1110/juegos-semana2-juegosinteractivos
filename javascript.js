@@ -195,6 +195,7 @@ const config = {
     width: 960,
     height: 640,
     scene: Escena,
+    parent: 'game',
     physics: {
         default: 'arcade',
     },

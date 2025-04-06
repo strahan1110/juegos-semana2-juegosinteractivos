@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>JUEGO CON JS</title>
+    <title>Jemima Jange - Juego JS</title>
     <meta charset="UTF-8">
-    <script src="phaser.min.js"></script>
-    <script src="javascript.js"></script>
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width">
+    
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background-color: black;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden; 
         }
 
+        #game {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-grow: 1; 
+            min-height: 0;
+            padding-top: 30px; 
+        }
 
         canvas {
-            display: block;
+            background-color: #222;
+            max-width: 100%;
+            height: auto;
+            max-height: 80vh; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: white;
+            background-color: #333;
+            width: 100%;
+        }
+
+        p {
             margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
     </style>
-
 </head>
 <body>
+    <div id="game"></div>
+
     <footer>
-        <H1>JEMIMA JANGE</H1>
+        <p>JEMIMA JANGE</p>
     </footer>
+
+    <script src="phaser.min.js"></script>
+    <script src="javascript.js"></script>
 </body>
 </html>
